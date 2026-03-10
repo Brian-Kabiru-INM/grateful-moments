@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218564DC2F603ADB00A0B774 /* MomentDetailView.swift */; };
+		2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */; };
+		2192DAA22F516A24002DC79D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAA12F516A24002DC79D /* ContentView.swift */; };
+		2192DAA42F516A26002DC79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2192DAA32F516A26002DC79D /* Assets.xcassets */; };
+		2192DAA72F516A26002DC79D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2192DAA62F516A26002DC79D /* Preview Assets.xcassets */; };
+		2192DAB12F516A27002DC79D /* GratefulMomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAB02F516A27002DC79D /* GratefulMomentsTests.swift */; };
+		2192DABB2F516A27002DC79D /* GratefulMomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DABA2F516A27002DC79D /* GratefulMomentsUITests.swift */; };
+		2192DABD2F516A27002DC79D /* GratefulMomentsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DABC2F516A27002DC79D /* GratefulMomentsUITestsLaunchTests.swift */; };
+		2192DAD02F517FA0002DC79D /* MomentEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DACF2F517FA0002DC79D /* MomentEntryView.swift */; };
+		2192DAD22F518E55002DC79D /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD12F518E55002DC79D /* Moment.swift */; };
+		2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD32F51909A002DC79D /* DataContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2192DAAD2F516A27002DC79D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2192DA942F516A24002DC79D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192DA9B2F516A24002DC79D;
+			remoteInfo = GratefulMoments;
+		};
+		2192DAB72F516A27002DC79D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2192DA942F516A24002DC79D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2192DA9B2F516A24002DC79D;
+			remoteInfo = GratefulMoments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		218564DC2F603ADB00A0B774 /* MomentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentDetailView.swift; sourceTree = "<group>"; };
+		2192DA9C2F516A24002DC79D /* GratefulMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GratefulMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratefulMomentsApp.swift; sourceTree = "<group>"; };
+		2192DAA12F516A24002DC79D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2192DAA32F516A26002DC79D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2192DAA62F516A26002DC79D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2192DAAC2F516A27002DC79D /* GratefulMomentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GratefulMomentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2192DAB02F516A27002DC79D /* GratefulMomentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratefulMomentsTests.swift; sourceTree = "<group>"; };
+		2192DAB62F516A27002DC79D /* GratefulMomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GratefulMomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2192DABA2F516A27002DC79D /* GratefulMomentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratefulMomentsUITests.swift; sourceTree = "<group>"; };
+		2192DABC2F516A27002DC79D /* GratefulMomentsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratefulMomentsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2192DACF2F517FA0002DC79D /* MomentEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentEntryView.swift; sourceTree = "<group>"; };
+		2192DAD12F518E55002DC79D /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		2192DAD32F51909A002DC79D /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2192DA992F516A24002DC79D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAA92F516A26002DC79D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAB32F516A27002DC79D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2192DA932F516A24002DC79D = {
+			isa = PBXGroup;
+			children = (
+				2192DA9E2F516A24002DC79D /* GratefulMoments */,
+				2192DAAF2F516A27002DC79D /* GratefulMomentsTests */,
+				2192DAB92F516A27002DC79D /* GratefulMomentsUITests */,
+				2192DA9D2F516A24002DC79D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2192DA9D2F516A24002DC79D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2192DA9C2F516A24002DC79D /* GratefulMoments.app */,
+				2192DAAC2F516A27002DC79D /* GratefulMomentsTests.xctest */,
+				2192DAB62F516A27002DC79D /* GratefulMomentsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2192DA9E2F516A24002DC79D /* GratefulMoments */ = {
+			isa = PBXGroup;
+			children = (
+				2192DACC2F517EC0002DC79D /* Logic */,
+				2192DACB2F517EB5002DC79D /* Tabs */,
+				2192DACA2F517EA7002DC79D /* Models */,
+				2192DAC92F517E79002DC79D /* Custom Views */,
+				2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */,
+				2192DAA12F516A24002DC79D /* ContentView.swift */,
+				2192DAA32F516A26002DC79D /* Assets.xcassets */,
+				2192DAA52F516A26002DC79D /* Preview Content */,
+			);
+			path = GratefulMoments;
+			sourceTree = "<group>";
+		};
+		2192DAA52F516A26002DC79D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2192DAA62F516A26002DC79D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2192DAAF2F516A27002DC79D /* GratefulMomentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2192DAB02F516A27002DC79D /* GratefulMomentsTests.swift */,
+			);
+			path = GratefulMomentsTests;
+			sourceTree = "<group>";
+		};
+		2192DAB92F516A27002DC79D /* GratefulMomentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2192DABA2F516A27002DC79D /* GratefulMomentsUITests.swift */,
+				2192DABC2F516A27002DC79D /* GratefulMomentsUITestsLaunchTests.swift */,
+			);
+			path = GratefulMomentsUITests;
+			sourceTree = "<group>";
+		};
+		2192DAC92F517E79002DC79D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2192DACA2F517EA7002DC79D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2192DAD12F518E55002DC79D /* Moment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2192DACB2F517EB5002DC79D /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				2192DACE2F517F1C002DC79D /* Achievements */,
+				2192DACD2F517F0E002DC79D /* Moments */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		2192DACC2F517EC0002DC79D /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2192DAD32F51909A002DC79D /* DataContainer.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2192DACD2F517F0E002DC79D /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				2192DACF2F517FA0002DC79D /* MomentEntryView.swift */,
+				218564DC2F603ADB00A0B774 /* MomentDetailView.swift */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		2192DACE2F517F1C002DC79D /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2192DA9B2F516A24002DC79D /* GratefulMoments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2192DAC02F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMoments" */;
+			buildPhases = (
+				2192DA982F516A24002DC79D /* Sources */,
+				2192DA992F516A24002DC79D /* Frameworks */,
+				2192DA9A2F516A24002DC79D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CA02E62F582B3B004CD4F3 /* PBXTargetDependency */,
+			);
+			name = GratefulMoments;
+			productName = GratefulMoments;
+			productReference = 2192DA9C2F516A24002DC79D /* GratefulMoments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2192DAAB2F516A26002DC79D /* GratefulMomentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2192DAC32F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMomentsTests" */;
+			buildPhases = (
+				2192DAA82F516A26002DC79D /* Sources */,
+				2192DAA92F516A26002DC79D /* Frameworks */,
+				2192DAAA2F516A26002DC79D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2192DAAE2F516A27002DC79D /* PBXTargetDependency */,
+			);
+			name = GratefulMomentsTests;
+			productName = GratefulMomentsTests;
+			productReference = 2192DAAC2F516A27002DC79D /* GratefulMomentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2192DAB52F516A27002DC79D /* GratefulMomentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2192DAC62F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMomentsUITests" */;
+			buildPhases = (
+				2192DAB22F516A27002DC79D /* Sources */,
+				2192DAB32F516A27002DC79D /* Frameworks */,
+				2192DAB42F516A27002DC79D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2192DAB82F516A27002DC79D /* PBXTargetDependency */,
+			);
+			name = GratefulMomentsUITests;
+			productName = GratefulMomentsUITests;
+			productReference = 2192DAB62F516A27002DC79D /* GratefulMomentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2192DA942F516A24002DC79D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2192DA9B2F516A24002DC79D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2192DAAB2F516A26002DC79D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2192DA9B2F516A24002DC79D;
+					};
+					2192DAB52F516A27002DC79D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2192DA9B2F516A24002DC79D;
+					};
+				};
+			};
+			buildConfigurationList = 2192DA972F516A24002DC79D /* Build configuration list for PBXProject "GratefulMoments" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2192DA932F516A24002DC79D;
+			packageReferences = (
+				21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
+			productRefGroup = 2192DA9D2F516A24002DC79D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2192DA9B2F516A24002DC79D /* GratefulMoments */,
+				2192DAAB2F516A26002DC79D /* GratefulMomentsTests */,
+				2192DAB52F516A27002DC79D /* GratefulMomentsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2192DA9A2F516A24002DC79D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2192DAA72F516A26002DC79D /* Preview Assets.xcassets in Resources */,
+				2192DAA42F516A26002DC79D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAAA2F516A26002DC79D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAB42F516A27002DC79D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2192DA982F516A24002DC79D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2192DAD02F517FA0002DC79D /* MomentEntryView.swift in Sources */,
+				2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */,
+				2192DAA22F516A24002DC79D /* ContentView.swift in Sources */,
+				218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */,
+				2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */,
+				2192DAD22F518E55002DC79D /* Moment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAA82F516A26002DC79D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2192DAB12F516A27002DC79D /* GratefulMomentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2192DAB22F516A27002DC79D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2192DABD2F516A27002DC79D /* GratefulMomentsUITestsLaunchTests.swift in Sources */,
+				2192DABB2F516A27002DC79D /* GratefulMomentsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2192DAAE2F516A27002DC79D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192DA9B2F516A24002DC79D /* GratefulMoments */;
+			targetProxy = 2192DAAD2F516A27002DC79D /* PBXContainerItemProxy */;
+		};
+		2192DAB82F516A27002DC79D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2192DA9B2F516A24002DC79D /* GratefulMoments */;
+			targetProxy = 2192DAB72F516A27002DC79D /* PBXContainerItemProxy */;
+		};
+		21CA02E62F582B3B004CD4F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 21CA02E52F582B3B004CD4F3 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2192DABE2F516A27002DC79D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2192DABF2F516A27002DC79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2192DAC12F516A27002DC79D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GratefulMoments/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2192DAC22F516A27002DC79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GratefulMoments/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2192DAC42F516A27002DC79D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GratefulMoments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GratefulMoments";
+			};
+			name = Debug;
+		};
+		2192DAC52F516A27002DC79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GratefulMoments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GratefulMoments";
+			};
+			name = Release;
+		};
+		2192DAC72F516A27002DC79D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GratefulMoments;
+			};
+			name = Debug;
+		};
+		2192DAC82F516A27002DC79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GratefulMoments;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2192DA972F516A24002DC79D /* Build configuration list for PBXProject "GratefulMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2192DABE2F516A27002DC79D /* Debug */,
+				2192DABF2F516A27002DC79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2192DAC02F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2192DAC12F516A27002DC79D /* Debug */,
+				2192DAC22F516A27002DC79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2192DAC32F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMomentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2192DAC42F516A27002DC79D /* Debug */,
+				2192DAC52F516A27002DC79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2192DAC62F516A27002DC79D /* Build configuration list for PBXNativeTarget "GratefulMomentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2192DAC72F516A27002DC79D /* Debug */,
+				2192DAC82F516A27002DC79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.63.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21CA02E52F582B3B004CD4F3 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2192DA942F516A24002DC79D /* Project object */;
+}
