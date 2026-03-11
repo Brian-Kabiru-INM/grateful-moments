@@ -18,6 +18,7 @@
 		2192DAD02F517FA0002DC79D /* MomentEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DACF2F517FA0002DC79D /* MomentEntryView.swift */; };
 		2192DAD22F518E55002DC79D /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD12F518E55002DC79D /* Moment.swift */; };
 		2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD32F51909A002DC79D /* DataContainer.swift */; };
+		219BC1902F61483B00F74052 /* AchievementEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC18F2F61483B00F74052 /* AchievementEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		2192DACF2F517FA0002DC79D /* MomentEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentEntryView.swift; sourceTree = "<group>"; };
 		2192DAD12F518E55002DC79D /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		2192DAD32F51909A002DC79D /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		219BC18F2F61483B00F74052 /* AchievementEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		2192DACE2F517F1C002DC79D /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
+				219BC18F2F61483B00F74052 /* AchievementEntryView.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				2192DAA22F516A24002DC79D /* ContentView.swift in Sources */,
 				218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */,
 				2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */,
+				219BC1902F61483B00F74052 /* AchievementEntryView.swift in Sources */,
 				2192DAD22F518E55002DC79D /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

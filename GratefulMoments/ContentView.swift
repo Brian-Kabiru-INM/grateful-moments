@@ -47,12 +47,14 @@ struct ContentView: View {
                 }
                 // Achievements Tab
                 VStack {
-                    Text("Achievements Page Coming Soon")
-                        .font(.title2)
-                        .padding()
+                    AchievementEntryView()
+                    // Text("Achievements Page Coming Soon")
+                        // .font(.title2)
+                        // .padding()
                 }
                 .tabItem {
                     Label("Achievements", systemImage: "star")
+                    // AchievementEntryView()
                 }
             }
             .toolbar {
@@ -74,11 +76,19 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             Text("Grateful Moments")
                 .font(.title)
-                .bold()
             Spacer()
             Text("\(moments.count) 🔥")
                 .font(.headline)
                 .foregroundColor(.orange)
+            Image("Hero")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .frame(maxWidth: .infinity, alignment: .center)
+            Text("Through My Lens")
+                .font(.caption)
+                .foregroundColor(.gray)
+                .italic()
         }
     }
     // Delete handler
