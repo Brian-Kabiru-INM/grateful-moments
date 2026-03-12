@@ -27,6 +27,26 @@ class Moment {
         }
     }
 }
+enum AchievementBadge: String {
+    case none = "No Badge"
+    case bronze = "Bronze Badge"
+    case silver = "Silver Badge"
+    case gold = "Gold Badge"
+}
+extension Moment {
+    static func badge(for moments: [Moment]) -> AchievementBadge {
+        switch moments.count {
+        case 0:
+            return .none
+        case 1:
+            return .silver
+        case 2...5:
+            return .bronze
+        default:
+            return .gold
+        }
+    }
+}
 
 extension Moment {
     static let sample = sampleData[0]

@@ -47,7 +47,7 @@ struct ContentView: View {
                 }
                 // Achievements Tab
                 VStack {
-                    AchievementEntryView()
+                    AchievementsListWrapper(moments: moments)
                     // Text("Achievements Page Coming Soon")
                         // .font(.title2)
                         // .padding()

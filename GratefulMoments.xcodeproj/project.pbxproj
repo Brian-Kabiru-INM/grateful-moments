@@ -19,6 +19,12 @@
 		2192DAD22F518E55002DC79D /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD12F518E55002DC79D /* Moment.swift */; };
 		2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAD32F51909A002DC79D /* DataContainer.swift */; };
 		219BC1902F61483B00F74052 /* AchievementEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC18F2F61483B00F74052 /* AchievementEntryView.swift */; };
+		219BC1922F618BC100F74052 /* AchievementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC1912F618BC100F74052 /* AchievementListVC.swift */; };
+		219BC1942F618C5700F74052 /* AchievementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC1932F618C5700F74052 /* AchievementDetailVC.swift */; };
+		219BC1962F618C8200F74052 /* AchievementCongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC1952F618C8200F74052 /* AchievementCongratsVC.swift */; };
+		219BC19D2F61901600F74052 /* AchievementListWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC19C2F61901600F74052 /* AchievementListWrapper.swift */; };
+		219BC19F2F6192F500F74052 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 219BC19E2F6192F500F74052 /* SnapKit */; };
+		219BC1A12F6192F500F74052 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 219BC1A02F6192F500F74052 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,10 @@
 		2192DAD12F518E55002DC79D /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
 		2192DAD32F51909A002DC79D /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 		219BC18F2F61483B00F74052 /* AchievementEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEntryView.swift; sourceTree = "<group>"; };
+		219BC1912F618BC100F74052 /* AchievementListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementListVC.swift; sourceTree = "<group>"; };
+		219BC1932F618C5700F74052 /* AchievementDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailVC.swift; sourceTree = "<group>"; };
+		219BC1952F618C8200F74052 /* AchievementCongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCongratsVC.swift; sourceTree = "<group>"; };
+		219BC19C2F61901600F74052 /* AchievementListWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementListWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219BC19F2F6192F500F74052 /* SnapKit in Frameworks */,
+				219BC1A12F6192F500F74052 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				219BC18F2F61483B00F74052 /* AchievementEntryView.swift */,
+				219BC1912F618BC100F74052 /* AchievementListVC.swift */,
+				219BC1932F618C5700F74052 /* AchievementDetailVC.swift */,
+				219BC1952F618C8200F74052 /* AchievementCongratsVC.swift */,
+				219BC19C2F61901600F74052 /* AchievementListWrapper.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -204,9 +220,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				219BC19B2F618EB900F74052 /* PBXTargetDependency */,
+				219BC1992F618E9E00F74052 /* PBXTargetDependency */,
 				21CA02E62F582B3B004CD4F3 /* PBXTargetDependency */,
 			);
 			name = GratefulMoments;
+			packageProductDependencies = (
+				219BC19E2F6192F500F74052 /* SnapKit */,
+				219BC1A02F6192F500F74052 /* SnapKit-Dynamic */,
+			);
 			productName = GratefulMoments;
 			productReference = 2192DA9C2F516A24002DC79D /* GratefulMoments.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +303,7 @@
 			mainGroup = 2192DA932F516A24002DC79D;
 			packageReferences = (
 				21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 2192DA9D2F516A24002DC79D /* Products */;
 			projectDirPath = "";
@@ -326,9 +349,13 @@
 			files = (
 				2192DAD02F517FA0002DC79D /* MomentEntryView.swift in Sources */,
 				2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */,
+				219BC1942F618C5700F74052 /* AchievementDetailVC.swift in Sources */,
 				2192DAA22F516A24002DC79D /* ContentView.swift in Sources */,
 				218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */,
+				219BC1962F618C8200F74052 /* AchievementCongratsVC.swift in Sources */,
 				2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */,
+				219BC19D2F61901600F74052 /* AchievementListWrapper.swift in Sources */,
+				219BC1922F618BC100F74052 /* AchievementListVC.swift in Sources */,
 				219BC1902F61483B00F74052 /* AchievementEntryView.swift in Sources */,
 				2192DAD22F518E55002DC79D /* Moment.swift in Sources */,
 			);
@@ -363,6 +390,14 @@
 			isa = PBXTargetDependency;
 			target = 2192DA9B2F516A24002DC79D /* GratefulMoments */;
 			targetProxy = 2192DAB72F516A27002DC79D /* PBXContainerItemProxy */;
+		};
+		219BC1992F618E9E00F74052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 219BC1982F618E9E00F74052 /* SnapKit */;
+		};
+		219BC19B2F618EB900F74052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 219BC19A2F618EB900F74052 /* SnapKit-Dynamic */;
 		};
 		21CA02E62F582B3B004CD4F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -660,6 +695,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint.git";
@@ -671,6 +714,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		219BC1982F618E9E00F74052 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		219BC19A2F618EB900F74052 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		219BC19E2F6192F500F74052 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		219BC1A02F6192F500F74052 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 219BC1972F618CEF00F74052 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		21CA02E52F582B3B004CD4F3 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21CA02E42F582720004CD4F3 /* XCRemoteSwiftPackageReference "SwiftLint" */;
