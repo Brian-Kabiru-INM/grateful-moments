@@ -1,40 +1,60 @@
 # Grateful Moments
 
-Grateful Moments is a SwiftUI app designed to help you capture, reflect on, and celebrate the positive experiences in your life. Built with **SwiftData** for persistence, the app provides a clean interface to record moments, attach notes or images, and revisit them whenever you need a reminder of gratitude.
+**Grateful Moments** is a SwiftUI app designed to help you capture, reflect on, and celebrate the positive experiences in your life. Built with **SwiftData** for persistence, the app provides a clean interface to record moments, attach notes or images, and revisit them whenever you need a reminder of gratitude.
 
----
+***
 
-## ✨ Features
+## Features
 
-- **Record Moments**  
-  Add a title, note, and optional image to capture what you’re grateful for.
+### **Moments Tab**
 
-- **Dynamic List View**  
-  Browse all saved moments in a scrollable list, with support for editing and deletion.
+The **Moments** tab is the heart of the app; to create, browse, and manage all your gratitude entries.
 
-- **Detail Editing**  
-  Tap on a moment to edit its title, note, or image in the `MomentDetailView`.
+*   **Add New Moments**  
+    Record what you’re grateful for with a title, detailed note, and optional image via a plus toolbarItem.
 
-- **Achievements Tab**  
-  Placeholder for tracking milestones and streaks — coming soon.
+*   **Dynamic List View**  
+    A SwiftUI-powered list displays all your saved moments.
 
-- **SwiftData Integration**  
-  All entries are stored locally using Apple’s SwiftData framework.
+*   **Moment Detail Editing**  
+    Tapping on a moment opens the `MomentDetailView`, where you can:
+    *   Edit the title
+    *   Update the note
+    *   Change the attached image
+    *   Delete the moment entirely
 
----
+*   **SwiftData Integration**  
+    All entries are stored locally using **SwiftData**, ensuring fast and lightweight persistence without external dependencies.
 
+***
 
-## 🛠️ Tech Stack
+### **Achievements Tab (UIKit)**
 
-- **SwiftUI** – Declarative UI framework for building the app interface.
-- **SwiftData** – Native persistence layer for storing moments.
-- **NavigationStack & TabView** – Modern navigation and tabbed layout.
-- **Reusable Components** – Custom views like `GratefulHexCard` for consistent styling.
+The **Achievements** tab has been upgraded to utilize **UIKit**, showcasing a 3‑screen flow built programmatically** using `UINavigationController`:
 
----
+## Tech Stack
 
-## 🚀 Getting Started
+*   **SwiftUI** – Declarative UI framework for building primary app screens
+*   **SwiftData** – Native persistence layer for Moments
+*   **UIKit** – Used for the Achievements tab and its 3‑screen navigation flow
+*   **NavigationStack & TabView** – Structuring navigation and tab-based layout
+*   **UINavigationController (programmatic)** – Powering the UIKit achievements workflow
+*   **Reusable Components** – Custom, consistent UI
+*   **Swift Concurrency** – For smooth UI handling without blocking
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Brian-Kabiru-INM/grateful-moments.git
+***
+
+## Getting Started
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Brian-Kabiru-INM/grateful-moments.git
+    ```
+
+2.  Open the project in Xcode:
+    ```bash
+    cd grateful-moments
+    open GratefulMoments.xcodeproj
+    ```
+
+3.  Build and run on iOS 17+ (recommended).
