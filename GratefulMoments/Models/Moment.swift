@@ -11,15 +11,24 @@ import UIKit
 
 @Model
 class Moment {
+    @Attribute(.unique) var backendID: String?
+    
     var title: String
     var note: String
     var imageData: Data?
     var timeStamp: Date
+    
+    var isSynced: Bool
+    var lastUpdated: Date
     init(title: String, note: String, imageData: Data? = nil, timeStamp: Date = .now) {
         self.title = title
         self.note = note
         self.imageData = imageData
         self.timeStamp = timeStamp
+        
+        self.isSynced = false
+        self.backendID = nil
+        self.lastUpdated = Date()
     }
     var image: UIImage? {
         imageData.flatMap {

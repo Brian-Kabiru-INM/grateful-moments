@@ -2,17 +2,23 @@ import SwiftUI
 import SwiftData
 
 struct MomentDetailView: View {
-    @Bindable var moment: Moment   // SwiftData binding to the model
+    @Bindable var moment: Moment
     @Environment(\.dismiss) private var dismiss
+    // let moment: MomentDisplay   // unified type for local + backend
+
     var body: some View {
         Form {
             Section(header: Text("Title")) {
-                TextField("Enter title", text: $moment.title)
+                TextField("Enter Title", text: $moment.title)
+                    .font(.headline)
             }
+
             Section(header: Text("Note")) {
                 TextEditor(text: $moment.note)
-                    .frame(minHeight: 120)
+                    .font(.body)
+                    .frame(minHeight: 120, alignment: .topLeading)
             }
+
             Section(header: Text("Image")) {
                 if let image = moment.image {
                     Image(uiImage: image)
@@ -24,8 +30,8 @@ struct MomentDetailView: View {
                     Text("No image attached")
                         .foregroundColor(.secondary)
                 }
-                // You could add a button here to pick a new image
             }
+
             Section(header: Text("Timestamp")) {
                 Text(moment.timeStamp, style: .date)
                 Text(moment.timeStamp, style: .time)
@@ -35,16 +41,20 @@ struct MomentDetailView: View {
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Done") {
-                    // Changes are automatically tracked by SwiftData
-                    // Just dismiss the view
+                    moment.isSynced = false
+                    moment.lastUpdated = Date()
+                    Task {
+                            do {
+                                try await SyncManager.shared.sync(moment: moment)
+                            } catch {
+                                print("Sync failed:", error)
+                            }
+                        }
+
                     dismiss()
                 }
             }
         }
     }
 }
-#Preview {
-    NavigationStack {
-        MomentDetailView(moment: Moment.sample)
-    }
-}
+

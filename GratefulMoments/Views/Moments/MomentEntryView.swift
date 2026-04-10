@@ -14,8 +14,9 @@ struct MomentEntryView: View {
     @State private var imageData: Data?
     @State private var newImage: PhotosPickerItem?
     @State private var isShowingCancelConfirmation = false
+    @State private var viewModel = MomentViewModel()
     @Environment(\.dismiss) private var dismiss
-    @Environment(DataContainer.self) private var dataContainer
+    @Environment(\.modelContext) private var context
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -46,13 +47,21 @@ struct MomentEntryView: View {
                             imageData: imageData,
                             timeStamp: .now
                             )
-                        dataContainer.context.insert(newMoment)
+                        context.insert(newMoment)
                         do {
-                            try dataContainer.context.save()
+                            try context.save()
                             dismiss()
                         } catch {
                         // dont dismiss
                         }
+                        let momentDTO = MomentDTO(
+                            id: UUID().uuidString,
+                            title: title,
+                            note: note,
+                            timeStamp: Date()
+                        )
+                        viewModel.addMoment(momentDTO)
+                        dismiss()
                     }
                     .disabled(title.isEmpty)
                 }
@@ -100,9 +109,4 @@ struct MomentEntryView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    MomentEntryView()
-        .sampleDataContainer()
 }

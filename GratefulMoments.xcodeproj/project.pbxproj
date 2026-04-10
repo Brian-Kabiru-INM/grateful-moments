@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218564DC2F603ADB00A0B774 /* MomentDetailView.swift */; };
+		21898EF52F7BEEDE0026EBAE /* HexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21898EF42F7BEEDE0026EBAE /* HexCard.swift */; };
+		21898EF72F7CF1710026EBAE /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21898EF62F7CF1710026EBAE /* SyncManager.swift */; };
+		21901C062F7A9190003E1BA6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901C052F7A9190003E1BA6 /* Endpoint.swift */; };
+		21901C082F7A94C4003E1BA6 /* MomentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901C072F7A94C4003E1BA6 /* MomentDTO.swift */; };
+		21901C0A2F7A960B003E1BA6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901C092F7A960B003E1BA6 /* APIClient.swift */; };
+		21901C0D2F7A9F76003E1BA6 /* MomentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21901C0C2F7A9F76003E1BA6 /* MomentViewModel.swift */; };
 		2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */; };
 		2192DAA22F516A24002DC79D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192DAA12F516A24002DC79D /* ContentView.swift */; };
 		2192DAA42F516A26002DC79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2192DAA32F516A26002DC79D /* Assets.xcassets */; };
@@ -46,6 +52,13 @@
 
 /* Begin PBXFileReference section */
 		218564DC2F603ADB00A0B774 /* MomentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentDetailView.swift; sourceTree = "<group>"; };
+		21898EF22F7B9BD00026EBAE /* GratefulMoments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GratefulMoments.entitlements; sourceTree = "<group>"; };
+		21898EF42F7BEEDE0026EBAE /* HexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexCard.swift; sourceTree = "<group>"; };
+		21898EF62F7CF1710026EBAE /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		21901C052F7A9190003E1BA6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		21901C072F7A94C4003E1BA6 /* MomentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentDTO.swift; sourceTree = "<group>"; };
+		21901C092F7A960B003E1BA6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		21901C0C2F7A9F76003E1BA6 /* MomentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentViewModel.swift; sourceTree = "<group>"; };
 		2192DA9C2F516A24002DC79D /* GratefulMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GratefulMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratefulMomentsApp.swift; sourceTree = "<group>"; };
 		2192DAA12F516A24002DC79D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +106,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21898EF32F7BEEBE0026EBAE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				21898EF42F7BEEDE0026EBAE /* HexCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		21901C032F7A77B6003E1BA6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21898EF62F7CF1710026EBAE /* SyncManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		21901C042F7A9118003E1BA6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				21901C052F7A9190003E1BA6 /* Endpoint.swift */,
+				21901C072F7A94C4003E1BA6 /* MomentDTO.swift */,
+				21901C092F7A960B003E1BA6 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		21901C0B2F7A9D88003E1BA6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				21901C0C2F7A9F76003E1BA6 /* MomentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		2192DA932F516A24002DC79D = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +163,13 @@
 		2192DA9E2F516A24002DC79D /* GratefulMoments */ = {
 			isa = PBXGroup;
 			children = (
+				21898EF32F7BEEBE0026EBAE /* Components */,
+				21898EF22F7B9BD00026EBAE /* GratefulMoments.entitlements */,
+				21901C0B2F7A9D88003E1BA6 /* ViewModels */,
+				21901C042F7A9118003E1BA6 /* Networking */,
+				21901C032F7A77B6003E1BA6 /* Services */,
 				2192DACC2F517EC0002DC79D /* Logic */,
-				2192DACB2F517EB5002DC79D /* Tabs */,
+				2192DACB2F517EB5002DC79D /* Views */,
 				2192DACA2F517EA7002DC79D /* Models */,
 				2192DAC92F517E79002DC79D /* Custom Views */,
 				2192DA9F2F516A24002DC79D /* GratefulMomentsApp.swift */,
@@ -168,13 +220,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2192DACB2F517EB5002DC79D /* Tabs */ = {
+		2192DACB2F517EB5002DC79D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2192DACE2F517F1C002DC79D /* Achievements */,
 				2192DACD2F517F0E002DC79D /* Moments */,
 			);
-			path = Tabs;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2192DACC2F517EC0002DC79D /* Logic */ = {
@@ -348,15 +400,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2192DAD02F517FA0002DC79D /* MomentEntryView.swift in Sources */,
+				21901C0A2F7A960B003E1BA6 /* APIClient.swift in Sources */,
 				2192DAD42F51909A002DC79D /* DataContainer.swift in Sources */,
 				219BC1942F618C5700F74052 /* AchievementDetailVC.swift in Sources */,
+				21901C0D2F7A9F76003E1BA6 /* MomentViewModel.swift in Sources */,
 				2192DAA22F516A24002DC79D /* ContentView.swift in Sources */,
 				218564DD2F603ADB00A0B774 /* MomentDetailView.swift in Sources */,
+				21898EF52F7BEEDE0026EBAE /* HexCard.swift in Sources */,
 				219BC1962F618C8200F74052 /* AchievementCongratsVC.swift in Sources */,
 				2192DAA02F516A24002DC79D /* GratefulMomentsApp.swift in Sources */,
 				219BC19D2F61901600F74052 /* AchievementListWrapper.swift in Sources */,
 				219BC1922F618BC100F74052 /* AchievementListVC.swift in Sources */,
+				21901C082F7A94C4003E1BA6 /* MomentDTO.swift in Sources */,
 				219BC1902F61483B00F74052 /* AchievementEntryView.swift in Sources */,
+				21901C062F7A9190003E1BA6 /* Endpoint.swift in Sources */,
+				21898EF72F7CF1710026EBAE /* SyncManager.swift in Sources */,
 				2192DAD22F518E55002DC79D /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,9 +588,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GratefulMoments/GratefulMoments.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GratefulMoments/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -547,6 +608,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMoments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,9 +620,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GratefulMoments/GratefulMoments.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GratefulMoments/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -575,6 +640,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GratefulMoments.GratefulMoments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
